@@ -1,3 +1,5 @@
+/*
+
 # RIIR
 why not Rewrite It In Rust (**RIIR**)
 
@@ -22,3 +24,5 @@ I don't, actually. I believe that those who spend their time asking people to re
 
 ### R U OFFENDING ME?
 ![](rust.png)
+
+*/
