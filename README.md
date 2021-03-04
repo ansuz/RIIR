@@ -26,9 +26,21 @@ I don't, actually. I believe that those who spend their time asking people to re
 ### R U OFFENDING ME?
 ![](rust.png)
 
+## Building
+This readme is written in Rust to further rebut arguments that Rust has low readability.
+The readme can be built into an executable by running the [just][just] command:
+
+> just build
+
+Then run "just test", and this readme will be regenerated in Rust code!
+
+(Unfortunately, Rust does not have backticks,
+so we cannot write code spans properly in this readme.)
+
 [rust-lang]: https://www.rust-lang.org/
 [issues]: https://github.com/ansuz/RIIR/issues/
 [memory-safe]: https://trac.torproject.org/projects/tor/ticket/11331
+[just]: https://github.com/casey/just
 
-<!-- }
-// -->
+// <!--
+} // -->

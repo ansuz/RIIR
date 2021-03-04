@@ -6,7 +6,7 @@ build: clean build-macro
 		--edition=2018 \
 		README.md \
 		--crate-type bin \
-		--out-dir target/debug/deps \
+		--out-dir target/debug \
 		-L dependency=target/debug/deps \
 		--extern riir_macro=$LIB_PATH
 clean:
