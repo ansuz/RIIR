@@ -27,15 +27,12 @@ I don't, actually. I believe that those who spend their time asking people to re
 ![](rust.png)
 
 ## Building
-This readme is written in Rust to further rebut arguments that Rust has low readability.
-The readme can be built into an executable by running the [just][just] command:
+This readme is valid Rust language.
+It can be built into an executable by running the [just][just] command:
 
-> just build
+    just build
 
 Then run "just test", and this readme will be regenerated in Rust code!
-
-(Unfortunately, Rust does not have backticks,
-so we cannot write code spans properly in this readme.)
 
 [rust-lang]: https://www.rust-lang.org/
 [issues]: https://github.com/ansuz/RIIR/issues/
