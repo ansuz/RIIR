@@ -1,0 +1,28 @@
+name: CI
+on:
+  - push
+  - pull_request
+jobs:
+  build:
+    name: Rust clippy and unit tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        rustup_channel:
+          - stable
+          - beta
+          - nightly
+        dev_flag:
+          - ""
+          - "--release"
+    steps:
+      - uses: actions/checkout@v2
+      - name: rustup install
+        run: |
+          rustup toolchain update --no-self-update ${{ matrix.rustup_channel }}
+          rustup default ${{ matrix.rustup_channel }}
+      - name: install just
+        run: cargo install just
+      - run: just build
+      - name: unit tests
+        run: just test
